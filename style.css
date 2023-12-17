@@ -1,0 +1,140 @@
+/* boilerplate code -- start 
+to be used in every stylesheet */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* boilerplate code -- end */
+
+/* code for custom font that is downloaded in the same directory */
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Regular.ttf") format("truetype"); /* Adjust the path and format as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+#main {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif; /*custom font */
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* code for left  div */
+
+#left {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1525373698358-041e3a460346?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+#overlay1 {
+  position: relative;
+  width: 100%; /*this will take the width and height of its parent i.e. left div */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.403);
+}
+
+#center1 {
+  position: absolute; /*to make it position correctly, child should have absolute positioning along with relative position of parent */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+#center1 h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#center1 p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#center1 button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+#center1 button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* code for right div */
+
+#right {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1609748573239-28fe24d71448?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+#overlay2 {
+  position: relative;
+  width: 100%; /*this will take the width and height of its parent i.e. left div */
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.741);
+}
+
+#center2 {
+  position: absolute; /*to make it position correctly, child should have absolute positioning along with relative position of parent */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+}
+
+#center2 h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#center2 p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#center2 button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+#center2 button:hover {
+  background-color: black;
+  color: white;
+}
